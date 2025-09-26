@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "df239c85-3c55-422f-97d3-eed4164c3bce",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Browser Client",
@@ -141,7 +141,7 @@
                   "status": "NotApplicable",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "",
+                  "description": "The browser client may be spoofed by an attacker through the attacker impersonating a legitimate user.",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
@@ -150,7 +150,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -180,6 +180,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -263,7 +264,6 @@
               ]
             },
             "id": "9beed646-23c2-49b8-ab3b-4a24e848f680",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Authorization Provider",
@@ -283,7 +283,7 @@
                   "status": "NotApplicable",
                   "severity": "TBD",
                   "type": "Elevation of privilege",
-                  "description": "",
+                  "description": "An attacker could exploit vulnerabilities in the authorization provider to elevate their privileges, leading to access to restricted assets or performing unauthorized actions. ",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
@@ -297,7 +297,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
             }
           },
@@ -322,6 +322,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -405,7 +406,6 @@
               ]
             },
             "id": "9f2cba2d-de95-428d-bab2-83e8aec4014f",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Web Application",
@@ -464,6 +464,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -547,7 +548,6 @@
               ]
             },
             "id": "eb85338b-bd63-4f69-ada0-5ee4d48031b9",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "LDAP",
@@ -606,6 +606,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -689,7 +690,6 @@
               ]
             },
             "id": "0fa20223-2ab4-4dc6-83f6-149abad9c927",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "SQL Database",
